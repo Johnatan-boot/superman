@@ -1,11 +1,81 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Superman: O Filme | Todos os Filmes</title>
+  <link rel="stylesheet" href="/variables.css" />
+  <link rel="stylesheet" href="/logo.css" />
+  <link rel="stylesheet" href="/todosOsfilmes.css" />
 </head>
 <body>
-    <h1>Hello World!</h1>
+  <header>
+<img src="/assets/image/logo/logoUpdate-Photoroom.png" alt="Logo Superman" class="logo-animada">
+    <h1>Superman: O Filme</h1>
+    <nav>
+      <ul>
+        <li><a href="./todosOsFilmes">Sobre</a></li>
+        <li><a href="./atores">Elenco</a></li>
+        <li><a href="./kriptonOcachorro">Kriptondog</a></li>
+        <li><a href="./historia">Historia</a></li>
+        <li><a href="./viloes">Viloes</a></li>
+      </ul>
+    </nav>
+    
+  </header>
+  <main>
+    <section class="grid-filmes">
+     
+      <superman-film-card
+        titulo="Superman II (1980)"
+        imagem="/assets/image/Filmes/superman-dc-1978.jpg"
+        descricao="Superman enfrenta General Zod e outros kryptonianos."
+        idfilme="1978"
+      ></superman-film-card>
+      <superman-film-card
+        titulo="Superman II (1980)"
+        imagem="/assets/image/Filmes/superman-dc-1980.jpg"
+        descricao="Superman enfrenta General Zod e outros kryptonianos."
+        idfilme="1980"
+      ></superman-film-card>
+
+      <superman-film-card
+        titulo="Superman Returns (2006)"
+        imagem="/assets/image/Filmes/superman-2006.jpg"
+        descricao="O retorno do herói após anos longe da Terra."
+        idfilme="2006"
+      ></superman-film-card>
+
+      <superman-film-card
+        titulo="O Homem de Aço (2013)"
+        imagem="/assets/image/Filmes/superman-2013.jpg"
+        descricao="Reboot estrelado por Henry Cavill com direção de Zack Snyder."
+        idfilme="2013"
+      ></superman-film-card>
+
+      <superman-film-card
+        titulo="Batman vs Superman (2016)"
+        imagem="/assets/image/Filmes/supermanxbatman2016.jpg"
+        descricao="Confronto épico entre os dois maiores heróis da DC."
+        idfilme="2016"
+      ></superman-film-card>
+      <superman-film-card
+        titulo="Batman vs Superman (2016)"
+      imagem="/assets/image/Filmes/supermanxbatman2017.jpg"
+        descricao="Confronto épico entre os dois maiores heróis da DC."
+        idfilme="2016"
+      ></superman-film-card>
+    </section>
+  </main>
+
+  <footer id="contato">
+    <p>© 2025 Produções DC | Contato: contato@dcfilms.com</p>
+  </footer>
+<script type="module" src="/loader.js"></script>
+
+  <script src="/player.js" type="module"></script>
+  <script type="module" src="/superman-film-card.js"></script>
 </body>
 </html>
+
+
