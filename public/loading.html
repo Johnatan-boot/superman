@@ -1,0 +1,29 @@
+<!-- loading.html -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Carregando...</title>
+  <link rel="stylesheet" href="/loader.css" />
+</head>
+<body>
+  <div class="loader-container">
+    <img src="/assets/image/logo/logoUpdate-Photoroom.png" alt="Carregando Superman" class="escudo-loading" />
+    <p>Carregando...</p>
+  </div>
+<script src="/loader.js" type="module"></script>
+<script>
+  const params = new URLSearchParams(window.location.search);
+  const destino = params.get('destino');
+  setTimeout(() => {
+    if (destino) {
+      window.location.href = destino;
+    } else {
+      window.location.href = '/';
+    }
+  }, 1500);
+</script>
+
+</body>
+</html>
