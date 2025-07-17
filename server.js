@@ -35,6 +35,9 @@ app.get('/atores', (req, res) => {
 app.get('/historia', (req, res) => {
   res.sendFile(path.join(__dirname, 'public', 'historia.html'));
 });
+app.get('/kriptonOcachorro', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'kriptonOcachorro.html'));
+});
 
 
 
