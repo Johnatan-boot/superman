@@ -28,12 +28,11 @@ a porta), pegue a resposta (res) e envie (send) uma tag h1 com o conteúdo “Se
 app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
-/*app.get('/study', (req, res) => {
-  res.sendFile(path.join(__dirname, 'public', 'study.html'));
+
+app.get('/atores', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'atores.html'));
 });
-app.get('/give-classes', (req, res) => {
-  res.sendFile(path.join(__dirname, 'public', 'give-classes.html'));
-});*/
+
 
 
 /*Rodando o servidor
