@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Superman: O Filme - História</title>
+  <link rel="stylesheet" href="/variables.css" />
+  <link rel="stylesheet" href="/logo.css" />
+  <link rel="stylesheet" href="/historia.css" />
+  <style>
+    .historia-container {
+      max-width: 960px;
+      margin: 2rem auto;
+      padding: 1.5rem;
+      background: var(--card-bg);
+      border-radius: 16px;
+      box-shadow: var(--shadow);
+      font-family: sans-serif;
+      line-height: 1.6;
+      opacity: 0;
+      transform: translateY(30px);
+      animation: fadeInUp 1s ease-out forwards;
+    }
+
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .historia-container h2 {
+      color: var(--blue-primary);
+      margin-top: 2rem;
+    }
+
+    .historia-container ul {
+      padding-left: 1.2rem;
+      list-style: disc;
+    }
+
+    .historia-container img {
+      width: 100%;
+      max-width: 100%;
+      border-radius: 12px;
+      margin-top: 1rem;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+      transition: transform 0.5s ease;
+    }
+
+    .historia-container img:hover {
+      transform: scale(1.02);
+    }
+
+    section {
+      margin-bottom: 2.5rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+<img src="/assets/image/logo/logoUpdate-Photoroom.png" alt="Logo Superman" class="logo-animada">
+    <h1>Superman: O Filme</h1>
+    <nav>
+      <ul>
+        <li><a href="./todosOsFilmes">Sobre</a></li>
+        <li><a href="./atores">Elenco</a></li>
+        <li><a href="./kriptonOcachorro">Kriptondog</a></li>
+        <li><a href="./historia">Historia</a></li>
+        <li><a href="./viloes">Viloes</a></li>
+      </ul>
+    </nav>
+    
+  </header>
+
+  <main class="historia-container">
+    <section class="introducao">
+      <h2>🌌 A Origem do Superman</h2>
+      <p>
+        Superman nasceu em Krypton, um planeta avançado tecnologicamente mas condenado à destruição. Seus pais, Jor-El e Lara, enviaram Kal-El ainda bebê em uma nave para a Terra, buscando salvá-lo. Ao pousar em Smallville, Kansas, ele foi adotado pelo casal Jonathan e Martha Kent, recebendo o nome Clark Kent.
+      </p>
+      <p>
+        Ao longo dos anos, Clark descobriu seus poderes: superforça, visão de calor, voo, supervelocidade e mais. Com valores morais fortes herdados dos Kents, ele se tornou o símbolo máximo da esperança: o Superman.
+      </p>
+      <img src="/assets/image/historia/kripton-explodiu.jpg" alt="Planeta Krypton explodindo">
+    </section>
+
+    <section class="filme-2025">
+      <h2>🎬 Superman: O Legado (2025)</h2>
+      <p>
+        O novo filme "Superman: O Legado" (2025) traz uma nova fase para o herói no universo cinematográfico da DC. Com direção de James Gunn, a trama mostra um Clark Kent jovem dividindo sua vida entre o jornalismo e o papel de protetor da humanidade.
+      </p>
+      <p>
+        Ao mesmo tempo em que enfrenta ameaças globais e dilemas éticos, o Superman do novo filme busca encontrar seu lugar em um mundo cético, sem abrir mão dos ideais de verdade e justiça. A história explora temas como identidade, compaixão e legado, em uma abordagem moderna e humana do herói.
+      </p>
+      <img src="/assets/image/pagina-atores/banner-super-man.jpg" alt="Superman 2025 voando">
+    </section>
+
+    <section class="curiosidades">
+      <h2>🧠 Curiosidades</h2>
+      <ul>
+        <li>O filme é o primeiro da nova fase do DCU (Universo DC).</li>
+        <li>Superman será interpretado por David Corenswet.</li>
+        <li>A nova versão mantém as raízes clássicas, mas com tom contemporâneo.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer id="contato">
+    <p>© 2025 Produções DC | Contato: contato@dcfilms.com</p>
+  </footer>
+
+  <!--<script type="module" src="/loader.js"></script>
+
+  <script src="/player.js" type="module"></script>-->
+</body>
+</html>

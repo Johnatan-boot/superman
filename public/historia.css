@@ -1,0 +1,24 @@
+.historia-container {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 1rem;
+  background: var(--card-bg);
+  border-radius: 16px;
+  box-shadow: var(--shadow);
+  font-family: sans-serif;
+  line-height: 1.6;
+}
+
+.historia-container h2 {
+  color: var(--blue-primary);
+  margin-top: 2rem;
+}
+
+.historia-container ul {
+  padding-left: 1.2rem;
+  list-style: disc;
+}
+
+.introducao, .filme-2025, .curiosidades {
+  margin-bottom: 2rem;
+}

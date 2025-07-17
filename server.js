@@ -32,6 +32,9 @@ app.get('/', (req, res) => {
 app.get('/atores', (req, res) => {
   res.sendFile(path.join(__dirname, 'public', 'atores.html'));
 });
+app.get('/historia', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'historia.html'));
+});
 
 
 
