@@ -44,6 +44,9 @@ app.get('/kriptonOcachorro', (req, res) => {
 app.get('/viloes', (req, res) => {
   res.sendFile(path.join(__dirname, 'public', 'viloes.html'));
 });
+app.get('/detail-todosOsfilmes', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'detail-todosOsfilmes.html'));
+});
 
 
 

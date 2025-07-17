@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Detalhes do Filme</title>
+  <link rel="stylesheet" href="/variables.css" />
+  <link rel="stylesheet" href="/logo.css" />
+  <link rel="stylesheet" href="/detail-todosOsfilmes.css" />
+</head>
+<body>
+ <header>
+<img src="/assets/image/logo/logoUpdate-Photoroom.png" alt="Logo Superman" class="logo-animada">
+    <h1>Superman: O Filme</h1>
+    <nav>
+      <ul>
+        <li><a href="./todosOsFilmes">Sobre</a></li>
+        <li><a href="./atores">Elenco</a></li>
+        <li><a href="./kriptonOcachorro">Kriptondog</a></li>
+        <li><a href="./historia">Historia</a></li>
+        <li><a href="./viloes">Viloes</a></li>
+      </ul>
+    </nav>
+    
+  </header>
+
+  <main class="container">
+    <div class="card-filme">
+      <img id="imagem-filme" alt="Imagem do filme" />
+      <div class="info">
+  <h1 id="titulo-filme">Carregando título...</h1>
+  <p id="descricao-filme">Carregando descrição...</p>
+  <div id="conteudo-filme"></div>
+  <a href="./todosOsFilmes" class="btn-voltar">← Voltar</a>
+</div>
+
+    </div>
+  </main>
+
+  <footer id="contato">
+    <p>© 2025 Produções DC | Contato: contato@dcfilms.com</p>
+  </footer>
+  <script type="module" src="/loader.js"></script>
+
+<script src="/player.js" type="module"></script>
+<script type="module" src="/detail-todosOsfilmes.js"></script>
+</body>
+</html>
