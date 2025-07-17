@@ -1,0 +1,92 @@
+ body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #dceeff, #f2f8ff);
+      color: #222;
+    }
+
+    
+    nav ul {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+      padding: 0;
+    }
+
+    nav li {
+      margin: 0 1rem;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .vilao-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      padding: 2rem;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    .card-vilao {
+      background: white;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+      animation: slideInUp 1s ease forwards;
+    }
+
+    .card-vilao:hover {
+      transform: translateY(-10px) scale(1.03);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+    }
+
+    .card-vilao img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+    }
+
+    .card-vilao .info {
+      padding: 1.2rem;
+    }
+
+    .card-vilao h3 {
+      color: #0033a0;
+      margin: 0 0 0.5rem;
+    }
+
+    .card-vilao p {
+      font-size: 0.95rem;
+      line-height: 1.4;
+      color: #444;
+    }
+
+   
+
+    /* Animações */
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes slideInUp {
+      from {
+        transform: translateY(60px);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    @keyframes pulse {
+      from { transform: scale(1); }
+      to { transform: scale(1.05); }
+    }

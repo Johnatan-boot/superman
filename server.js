@@ -28,6 +28,9 @@ a porta), pegue a resposta (res) e envie (send) uma tag h1 com o conteúdo “Se
 app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
+app.get('/todosOsfilmes', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'index.html'));
+});
 
 app.get('/atores', (req, res) => {
   res.sendFile(path.join(__dirname, 'public', 'atores.html'));
@@ -37,6 +40,9 @@ app.get('/historia', (req, res) => {
 });
 app.get('/kriptonOcachorro', (req, res) => {
   res.sendFile(path.join(__dirname, 'public', 'kriptonOcachorro.html'));
+});
+app.get('/viloes', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'viloes.html'));
 });
 
 
